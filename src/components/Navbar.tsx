@@ -2,7 +2,7 @@ const Navbar = () => {
   return (
     <header>
       <nav>
-        <img src="/logo.svg" alt="Логотип" />
+        <img src="./assets/logo.svg" alt="Логотип" />
       </nav>
     </header>
   );
