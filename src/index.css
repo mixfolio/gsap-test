@@ -1,0 +1,25 @@
+@import "tailwindcss";
+
+@utility col-center {
+  @apply flex flex-col items-center justify-center;
+}
+
+@layer components {
+  header {
+    @apply w-full bg-black fixed;
+    nav {
+      @apply container;
+    }
+  }
+  #hero {
+    @apply col-center lg:h-[420px] bg-cyan-950;
+
+    h2 {
+      @apply text-white text-4xl font-semibold uppercase;
+    }
+
+    h3 {
+      @apply text-white text-2xl;
+    }
+  }
+}
