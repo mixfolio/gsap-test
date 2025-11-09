@@ -1,11 +1,9 @@
-import { Gallery, Hero, Navbar } from "./components";
+import { Map } from "./components";
 
 const App = () => {
   return (
     <main>
-      <Navbar />
-      <Hero />
-      <Gallery />
+      <Map />
     </main>
   );
 };

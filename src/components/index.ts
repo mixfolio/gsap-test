@@ -1,3 +1,8 @@
 export { default as Navbar } from "./Navbar";
 export { default as Hero } from "./Hero";
 export { default as Gallery } from "./Gallery";
+export { default as Schema } from "./Schema";
+export { default as GsapHeader } from "./GsapHeader";
+export { default as SvgFilters } from "./SvgFilters";
+export { default as Map } from "./Map";
+export { PinComp } from "./PinComp";

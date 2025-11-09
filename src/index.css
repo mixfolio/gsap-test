@@ -22,4 +22,46 @@
       @apply text-white text-2xl;
     }
   }
+
+  #gsap-header {
+    @apply h-screen relative overflow-hidden w-full;
+    .star {
+      @apply absolute w-20;
+    }
+    .hero-bg {
+      @apply -z-[1] absolute w-full h-full left-0 right-0 object-cover;
+    }
+    .hero-img {
+      @apply absolute left-0 bottom-0 w-80;
+    }
+
+    h2 {
+      @apply text-white text-5xl;
+    }
+
+    h3 {
+      @apply text-white text-3xl;
+    }
+  }
+
+  #svg-filters-section {
+    @apply bg-gray-500 px-[240px];
+
+    h2 {
+      @apply text-white text-5xl;
+    }
+
+    #object,
+    img {
+      @apply block text-center;
+    }
+
+    /* .svgs {
+      filter: url(#svg);
+    } */
+
+    #object {
+      @apply rounded-[50%] w-[200px] h-[200px] border-8 border-cyan-600;
+    }
+  }
 }
