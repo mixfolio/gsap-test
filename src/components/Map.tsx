@@ -27,9 +27,11 @@ const Map = () => {
     event.preventDefault();
 
     const form = new FormData(event.currentTarget);
+
     const formData = Object.fromEntries(form.entries());
 
     console.log(formData);
+    //@ts-ignore
     addMapPin(formData);
     formRef?.current?.reset();
   };
