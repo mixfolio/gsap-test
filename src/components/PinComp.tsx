@@ -1,21 +1,30 @@
 import type { FC } from "react";
 
 type PinCompProps = {
-  colorBg: "green" | "gray" | "red";
   objectType: "1" | "2" | "3";
   temperatureOut: number | undefined;
   temperatureWater: number | undefined;
   temperatureWaterColor: string | undefined;
+  variant: "success" | "error" | "disabled";
 } & React.SVGProps<SVGSVGElement>;
 
 export const PinComp: FC<PinCompProps> = ({
-  colorBg = "gray",
+  variant,
   objectType,
   temperatureOut = "",
   temperatureWater = "",
   temperatureWaterColor = "black",
   ...props
 }) => {
+  const colorBg =
+    variant === "success"
+      ? "green"
+      : variant === "error"
+      ? "red"
+      : variant === "disabled"
+      ? "gray"
+      : "gray";
+
   return (
     <svg
       width="48"
