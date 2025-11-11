@@ -15,6 +15,11 @@ import { usePinStore } from "../stores/usePinsStore";
 //   coordY: string;
 // }
 
+type PinFormFields = {
+  objectType: HTMLSelectElement;
+  variant: HTMLSelectElement;
+};
+
 const Map = () => {
   const formRef = useRef<HTMLFormElement>(null);
   const pinsRef = useRef<HTMLDivElement>(null);
@@ -23,14 +28,18 @@ const Map = () => {
   const pins = usePinStore((store) => store.pins);
   const addMapPin = usePinStore((store) => store.addMapPin);
 
-  const handleSubmit: React.FormEventHandler<HTMLFormElement> = (event) => {
+  const handleSubmit: React.FormEventHandler<
+    HTMLFormElement & PinFormFields
+  > = (event) => {
     event.preventDefault();
 
     const form = new FormData(event.currentTarget);
 
-    const formData = Object.fromEntries(form.entries());
+    //     const form = event.currentTarget
+    // // addMapPin({});
 
-    console.log(formData);
+    const formData = Object.fromEntries(form.entries());
+    // console.log(formData);
     //@ts-ignore
     addMapPin(formData);
     formRef?.current?.reset();
@@ -43,7 +52,7 @@ const Map = () => {
       duration: 1,
       ease: "power1.in",
       yoyo: true,
-      stagger: 1,
+      stagger: 0.3,
     });
   }, []);
   return (
