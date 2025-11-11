@@ -1,8 +1,9 @@
-import { Map } from "./components";
+import { Map, Schema } from "./components";
 
 const App = () => {
   return (
     <main>
+      <Schema />
       <Map />
     </main>
   );

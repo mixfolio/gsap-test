@@ -1,0 +1,25 @@
+<style>
+  #heating-svg #arrows path {
+  animation-name: heating-change-color;
+  animation-direction: alternate;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  }
+  #heating-svg #line-hot,
+  #heating-svg #line-cold {
+  animation: heating-line-animate 2s infinite linear;
+  }
+  @keyframes heating-change-color { 100% { opacity: 0.5; } }
+  @keyframes heating-line-animate { 100% { stroke-dashoffset: 0; } }
+
+  /* Важное правило с префиксом id SVG */
+  #heating-svg text {
+  font-family: Arial, sans-serif;
+  fill: white;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px;
+  }
+</style>
