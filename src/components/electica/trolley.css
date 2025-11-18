@@ -1,0 +1,16 @@
+.color {
+  stroke: red;
+}
+
+use.test1 {
+  /* fill: red; */
+  stroke: green;
+  fill: none;
+  stroke-width: 4px;
+}
+use.test2 {
+  fill: purple;
+}
+use.test3 {
+  fill: yellow;
+}

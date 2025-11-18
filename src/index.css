@@ -64,4 +64,32 @@
       @apply rounded-[50%] w-[200px] h-[200px] border-8 border-cyan-600;
     }
   }
+
+  #scroll-cards {
+    @apply bg-gray-500 py-10 lg:py-20 min-h-screen;
+
+    .wrapper {
+      @apply container mx-auto;
+
+      h2 {
+        @apply text-white text-6xl;
+      }
+
+      .card-list {
+        @apply flex flex-col gap-6 mt-12 relative;
+      }
+
+      .card {
+        @apply p-6 rounded-2xl h-[50vh] absolute border;
+
+        h2 {
+          @apply text-black text-4xl;
+        }
+
+        p {
+          @apply text-xl mt-6;
+        }
+      }
+    }
+  }
 }

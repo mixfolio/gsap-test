@@ -62,8 +62,9 @@ const Schema = () => {
   }, []);
 
   return (
-    <div
-      className="bg-black"
+    <section
+      id="schema"
+      className="bg-black relative"
       // onClick={(e) => console.log(e.target)}
     >
       <div className="space-x-4 absolute top-4 left-6">
@@ -198,7 +199,7 @@ const Schema = () => {
           Добавить коннектор
         </button>
       </div>
-    </div>
+    </section>
   );
 };
 

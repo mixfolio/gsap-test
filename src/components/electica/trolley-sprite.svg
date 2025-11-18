@@ -1,0 +1,14 @@
+<svg  viewBox="0 0 32 128" fill="none" stroke="default" xmlns="http://www.w3.org/2000/svg">
+<symbol id="trolley-a" width="32" height="128" viewBox="0 0 32 128" fill="none"  xmlns="http://www.w3.org/2000/svg">
+<path d="M5 93L16 104L27 93"  stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M5 46L16 35L27 46"  stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M5 35L16 24L27 35" stroke="black" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M16 8V24"  stroke-width="4" stroke-linecap="round"/>
+<path d="M16 104V120" stroke-linecap="round"/>
+<path d="M16 35V53"  stroke-width="4" stroke-linecap="round"/>
+<path d="M5 82L16 93L27 82" stroke="black" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M16 93V75" stroke="black" stroke-width="4" stroke-linecap="round"/>
+<path d="M27 53H5V75H27V53Z" fill="black" stroke="black" stroke-width="4" stroke-linejoin="round"/>
+</symbol>
+
+</svg>
