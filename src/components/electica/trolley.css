@@ -1,16 +1,14 @@
-.color {
-  stroke: red;
+use.var1 {
+  --color-v: #640064;
+  stroke: var(--color-v);
 }
 
-use.test1 {
-  /* fill: red; */
-  stroke: green;
-  fill: none;
-  stroke-width: 4px;
+use.var2 {
+  --color-v: #640064;
+  stroke: var(--color-v);
 }
-use.test2 {
-  fill: purple;
-}
-use.test3 {
-  fill: yellow;
+
+use.var3 {
+  --color-v: #008c00;
+  stroke: var(--color-v);
 }
