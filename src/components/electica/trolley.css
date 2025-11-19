@@ -4,7 +4,7 @@ use.var1 {
 }
 
 use.var2 {
-  --color-v: #640064;
+  --color-v: #c89664;
   stroke: var(--color-v);
 }
 

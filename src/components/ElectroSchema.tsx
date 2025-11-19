@@ -8,7 +8,7 @@ const ElectroSchema = () => {
     <div className="overflow-x-hidden">
       <Trolley
         color={color10kv}
-        state="a"
+        state="state1"
         style={{
           position: "absolute",
           top: 48,
@@ -17,7 +17,7 @@ const ElectroSchema = () => {
       />
       <Trolley
         color={color10kv}
-        state="b"
+        state="state2"
         style={{
           position: "absolute",
           top: 48,
@@ -26,11 +26,47 @@ const ElectroSchema = () => {
       />
       <Trolley
         color={color10kv}
-        state="c"
+        state="state3"
         style={{
           position: "absolute",
           top: 48,
           left: 144,
+        }}
+      />
+      <Trolley
+        color={color10kv}
+        state="state4"
+        style={{
+          position: "absolute",
+          top: 48,
+          left: 192,
+        }}
+      />
+      <Trolley
+        color={color10kv}
+        state="state5"
+        style={{
+          position: "absolute",
+          top: 48,
+          left: 240,
+        }}
+      />
+      <Trolley
+        color={color10kv}
+        state="state6"
+        style={{
+          position: "absolute",
+          top: 48,
+          left: 288,
+        }}
+      />
+      <Trolley
+        color={color10kv}
+        state="state7"
+        style={{
+          position: "absolute",
+          top: 48,
+          left: 336,
         }}
       />
       <ElectroSchemaBg />
