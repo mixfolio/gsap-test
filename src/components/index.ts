@@ -5,6 +5,7 @@ export { default as Schema } from "./Schema";
 export { default as ElectroSchema } from "./ElectroSchema";
 export { default as GsapHeader } from "./GsapHeader";
 export { default as SvgFilters } from "./SvgFilters";
+export { default as ScrollTriggerTest } from "./ScrollTriggerTest";
 export { default as Map } from "./Map";
 export { PinComp } from "./PinComp";
 export { default as ScrollSections } from "./ScrollSections";
