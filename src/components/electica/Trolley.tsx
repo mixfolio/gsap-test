@@ -16,7 +16,7 @@ export const Trolley: FC<TrolleyProps> = ({ state, ...props }) => {
   switch (state) {
     case "state1": {
       return (
-        <svg {...props}>
+        <svg width="32" height="128" {...props}>
           <use
             xlinkHref="./trolley-sprite.svg#trolley-state1"
             className="var1"
@@ -26,7 +26,7 @@ export const Trolley: FC<TrolleyProps> = ({ state, ...props }) => {
     }
     case "state2": {
       return (
-        <svg {...props}>
+        <svg width="32" height="128" {...props}>
           <use
             xlinkHref="./trolley-sprite.svg#trolley-state2"
             className="var2"
@@ -36,7 +36,7 @@ export const Trolley: FC<TrolleyProps> = ({ state, ...props }) => {
     }
     case "state3": {
       return (
-        <svg {...props}>
+        <svg width="32" height="128" {...props}>
           <use
             xlinkHref="./trolley-sprite.svg#trolley-state3"
             className="var3"
@@ -46,7 +46,7 @@ export const Trolley: FC<TrolleyProps> = ({ state, ...props }) => {
     }
     case "state4": {
       return (
-        <svg {...props}>
+        <svg width="32" height="128" {...props}>
           <use
             xlinkHref="./trolley-sprite.svg#trolley-state4"
             className="var2"
@@ -56,7 +56,7 @@ export const Trolley: FC<TrolleyProps> = ({ state, ...props }) => {
     }
     case "state5": {
       return (
-        <svg {...props}>
+        <svg width="32" height="128" {...props}>
           <use
             xlinkHref="./trolley-sprite.svg#trolley-state5"
             className="var1"
@@ -66,7 +66,7 @@ export const Trolley: FC<TrolleyProps> = ({ state, ...props }) => {
     }
     case "state6": {
       return (
-        <svg {...props}>
+        <svg width="32" height="128" {...props}>
           <use
             xlinkHref="./trolley-sprite.svg#trolley-state6"
             className="var1"
@@ -76,7 +76,7 @@ export const Trolley: FC<TrolleyProps> = ({ state, ...props }) => {
     }
     case "state7": {
       return (
-        <svg {...props}>
+        <svg width="32" height="128" {...props}>
           <use
             xlinkHref="./trolley-sprite.svg#trolley-state7"
             className="var2"

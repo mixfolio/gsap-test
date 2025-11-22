@@ -1,7 +1,30 @@
 @import "tailwindcss";
 
+@theme {
+  /* --font-regular: "Regular";
+  --font-medium: "Medium";
+  --font-semibold: "SemiBold";
+  --font-bold: "Bold"; */
+  --color-primary: #0071e3;
+  --color-dark-100: #86868b;
+  /*  --color-dark-200: #2e2e30;
+  --color-light-100: #adb5bd; */
+}
+
 @utility col-center {
   @apply flex flex-col items-center justify-center;
+}
+
+@utility b1 {
+  @apply border border-indigo-600;
+}
+
+@utility b2 {
+  @apply border border-green-600;
+}
+
+@utility b3 {
+  @apply border border-red-600;
 }
 
 @layer components {
@@ -89,6 +112,43 @@
         p {
           @apply text-xl mt-6;
         }
+      }
+    }
+  }
+  #map {
+    @apply h-fit;
+  }
+
+  #showcase {
+    @apply bg-cyan-100;
+    .media {
+      @apply relative;
+    }
+    .mask {
+      @apply absolute h-full top-0;
+
+      img {
+        @apply h-full scale-150;
+      }
+    }
+
+    .content {
+      @apply relative bg-black  text-gray-400 text-xl lg:opacity-0;
+
+      .wrapper {
+        @apply container px-6 py-10 mx-auto flex flex-col lg:flex-row gap-10 justify-center;
+      }
+
+      h2 {
+        @apply font-semibold text-3xl lg:text-6xl text-white;
+      }
+
+      h3 {
+        @apply font-semibold text-3xl lg:text-6xl text-lime-600;
+      }
+
+      h4 {
+        @apply font-semibold text-2xl lg:text-4xl text-lime-600;
       }
     }
   }

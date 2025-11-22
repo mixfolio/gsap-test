@@ -9,3 +9,4 @@ export { default as ScrollTriggerTest } from "./ScrollTriggerTest";
 export { default as Map } from "./Map";
 export { PinComp } from "./PinComp";
 export { default as ScrollSections } from "./ScrollSections";
+export { default as ShowCase } from "./ShowCase";

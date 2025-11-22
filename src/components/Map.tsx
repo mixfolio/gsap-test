@@ -56,7 +56,7 @@ const Map = () => {
     });
   }, []);
   return (
-    <section className="relative">
+    <section id="map" className="relative">
       <img src={map} alt="Карта" />
       <div ref={pinsRef}>
         {pins &&
@@ -78,7 +78,8 @@ const Map = () => {
             />
           ))}
       </div>
-      <div className="bg-gray-300 absolute top-6 left-6 p-6 rounded-xl w-[400px]">
+
+      <div className="bg-gray-300 lg:absolute top-6 left-6 p-6 rounded-xl w-[400px]">
         <h2 className="text-2xl mb-4">Создать пин</h2>
         <form ref={formRef} className="space-y-4" onSubmit={handleSubmit}>
           <select

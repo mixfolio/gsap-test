@@ -1,4 +1,10 @@
-import { ElectroSchema, Map, Schema, ScrollTriggerTest } from "./components";
+import {
+  ElectroSchema,
+  Map,
+  Schema,
+  ScrollTriggerTest,
+  ShowCase,
+} from "./components";
 import gsap from "gsap";
 import { ScrollTrigger, SplitText } from "gsap/all";
 
@@ -12,6 +18,7 @@ const App = () => {
       <Schema />
       <ScrollTriggerTest />
       <Map />
+      <ShowCase />
     </main>
   );
 };
