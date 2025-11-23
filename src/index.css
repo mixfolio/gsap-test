@@ -27,6 +27,12 @@
   @apply border border-red-600;
 }
 
+/* @layer utilities {
+  .clip-preloader {
+    @apply clip-path: poligon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+  }
+} */
+
 @layer components {
   header {
     @apply w-full bg-black fixed;
@@ -150,6 +156,19 @@
       h4 {
         @apply font-semibold text-2xl lg:text-4xl text-lime-600;
       }
+    }
+  }
+
+  #preloader {
+    @apply fixed top-0 left-0 w-full h-svh bg-black overflow-hidden z-[2];
+    .progress-bar {
+      @apply absolute top-0 left-0 w-full h-2 bg-amber-500 transform-[scaleX(0)] origin-left will-change-transform;
+    }
+    .preloader-images {
+      @apply absolute top-[45%] left-[50%] translate-[-50%] w-100 h-100 overflow-hidden;
+    }
+    img {
+      @apply w-full h-full object-cover border-8 border-amber-500;
     }
   }
 }

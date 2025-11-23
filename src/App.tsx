@@ -1,9 +1,10 @@
 import {
-  ElectroSchema,
-  Map,
-  Schema,
-  ScrollTriggerTest,
-  ShowCase,
+  // ElectroSchema,
+  // Map,
+  Preloader,
+  // Schema,
+  // ScrollTriggerTest,
+  // ShowCase,
 } from "./components";
 import gsap from "gsap";
 import { ScrollTrigger, SplitText } from "gsap/all";
@@ -13,12 +14,13 @@ gsap.registerPlugin(ScrollTrigger, SplitText);
 const App = () => {
   return (
     <main>
-      <ElectroSchema />
+      <Preloader />
+      {/* <ElectroSchema /> */}
       {/* <ScrollSections /> */}
-      <Schema />
+      {/* <Schema />
       <ScrollTriggerTest />
       <Map />
-      <ShowCase />
+      <ShowCase /> */}
     </main>
   );
 };

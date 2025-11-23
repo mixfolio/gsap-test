@@ -5,7 +5,7 @@ const color10kv = "#640064";
 
 const ElectroSchema = () => {
   return (
-    <div className="overflow-x-hidden">
+    <div className="overflow-x-hidden relative">
       <Trolley
         color={color10kv}
         state="state1"

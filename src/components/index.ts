@@ -10,3 +10,4 @@ export { default as Map } from "./Map";
 export { PinComp } from "./PinComp";
 export { default as ScrollSections } from "./ScrollSections";
 export { default as ShowCase } from "./ShowCase";
+export { default as Preloader } from "./Preloader";
